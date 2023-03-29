@@ -30,6 +30,6 @@ public class PersonValidator implements Validator {
         catch(UsernameNotFoundException ignored){
             return;
         }
-        errors.rejectValue("username", "", "Person with this username!");
+        errors.rejectValue("username", "", "Person with this username is already registered!");
     }
 }
